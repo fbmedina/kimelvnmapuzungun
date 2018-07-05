@@ -1,32 +1,32 @@
 :root {
-    --negro: 68, 68, 68; 
-    --rojo: 170, 34, 51;
-    --verde:136, 136, 51;
-    --azul: 45, 63, 199;
-    --amarillo: 255, 238, 136;
-    --cafe: 119, 68, 34;
+    --black: 68, 68, 68; 
+    --red: 170, 34, 51;
+    --green:136, 136, 51;
+    --blue: 45, 63, 199;
+    --yellow: 255, 238, 136;
+    --brown: 119, 68, 34;
 }
 
 @font-face {
     font-family: 'MAPUCHE';
-    src: url('MAPUCHE-Regular.woff2') format('woff2'),
-        url('MAPUCHE-Regular.woff') format('woff');
+    src: url('../fonts/MAPUCHE-Regular.woff2') format('woff2'),
+        url('../fonts/MAPUCHE-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dosis';
-    src: url('Dosis-Medium.woff2') format('woff2'),
-        url('Dosis-Medium.woff') format('woff');
+    src: url('../fonts/Dosis-Medium.woff2') format('woff2'),
+        url('../fonts/Dosis-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dosis';
-    src: url('Dosis-ExtraBold.woff2') format('woff2'),
-        url('Dosis-ExtraBold.woff') format('woff');
+    src: url('../fonts/Dosis-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Dosis-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -37,8 +37,8 @@ body, html {
 	text-align: center;
     font-family: 'Dosis';
     font-weight: 500;
-    font-size: 16px;
-    color: rgb(var(--negro));
+    font-size: 18px;
+    color: rgb(var(--black));
 }
 
 *, *:before, *:after {
@@ -47,16 +47,12 @@ body, html {
 
 a {
     text-decoration: none;
-    color: rgb(var(--negro));
-}
-
-a:hover {
-    color: ;
+    color: rgb(var(--black));
 }
 
 h1 {
     font-family: 'MAPUCHE';
-    color: rgb(var(--rojo));
+    color: rgb(var(--red));
     font-size: 5em;
 }
 
@@ -70,6 +66,58 @@ h2 {
     font-size: 3em;
 }
 
-#section0 * {
-    margin-bottom: 2.5rem;
+.marco-left, .marco-right {
+    position: fixed;
+    height: 100vh;
+    width: auto;
+    fill: rgb(var(--black));
+    opacity: .75;
+}
+
+.marco-left {
+    top: 0;
+    left: 0;
+}
+
+.marco-right {
+    top: 0;
+    right: 0;
+}
+
+[data-anchor="home"] .intro * {
+    margin-bottom: 3rem;
+}
+
+[data-anchor="home"] .intro .saludo * {
+    margin-bottom: 1rem;
+}
+
+[data-anchor="home"].active .fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+.text-red:hover, .red {
+    color: rgb(var(--red));
+    fill: rgb(var(--red));
+}
+
+.text-green:hover, .green {
+    color: rgb(var(--green));
+    fill: rgb(var(--green));
+}
+
+.text-blue:hover, .blue {
+    color: rgb(var(--blue));
+    fill: rgb(var(--blue));
+}
+
+.text-yellow:hover, .yellow {
+    color: rgb(var(--yellow));
+    fill: rgb(var(--yellow));
+}
+
+.text-brown:hover, .brown {
+    color: rgb(var(--brown));
+    fill: rgb(var(--brown));
 }
