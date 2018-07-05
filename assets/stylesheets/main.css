@@ -1,0 +1,13 @@
+:root {
+
+}
+
+
+body, html {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
