@@ -7,15 +7,69 @@
     --cafe: 119, 68, 34;
 }
 
+@font-face {
+    font-family: 'MAPUCHE';
+    src: url('MAPUCHE-Regular.woff2') format('woff2'),
+        url('MAPUCHE-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Medium.woff2') format('woff2'),
+        url('Dosis-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-ExtraBold.woff2') format('woff2'),
+        url('Dosis-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
 }
 
 
 body, html {
 	box-sizing: border-box;
 	text-align: center;
+    font-family: 'Dosis';
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(var(--negro));
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(var(--negro));
+}
+
+a:hover {
+    color: ;
+}
+
+h1 {
+    font-family: 'MAPUCHE';
+    color: rgb(var(--rojo));
+    font-size: 5em;
+}
+
+h2, h3, h4 {
+    font-family: 'Dosis';
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+#section0 * {
+    margin-bottom: 2.5rem;
 }
