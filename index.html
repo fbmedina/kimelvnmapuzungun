@@ -25,12 +25,23 @@
 			<a class="joel" href="joel.html"><h2>Joel Maripil</h2></a>
 			<h1>Ulkantun</h1>
 			<div class="saludo">
-				<p><i class="fas fa-sync-alt fa-2x red"></i></p>
-				<p>Mari Mari Pu Peñi Mari Pu Lamgen, <br>Kiñe Poyen Calin Jowmvn Kom Eymvn</p>
+				<div id="saludo-mapudungun" class="animated displaying">
+					<p><i class="fas fa-sync-alt fa-2x red for-display"></i></p>
+					<p>Mari Mari Pu Peñi Mari Pu Lamgen, <br>Kiñe Poyen Calin Jowmvn Kom Eymvn</p>
 
-				<p>Pu Wirin Ka Vl <br>Kimelvn Mapuzungun</p>
+					<p>Pu Wirin Ka Vl <br>Kimelvn Mapuzungun</p>
 
-				<p>Kimelgeygvn Ka Cijkatun Mapuzugun Mew</p>
+					<p>Kimelgeygvn Ka Cijkatun Mapuzugun Mew</p>
+				</div>
+
+				<div id="saludo-espanol" class="animated no-displaying">
+					<p><i class="fas fa-sync-alt fa-2x red for-display"></i></p>
+					<p>Hermanos, hermanas buenos días, <br>reciban todos un cordial saludo</p>
+
+					<p>Los poemas y música <br>enseñan el idioma mapuche</p>
+
+					<p>Y les enseñaremos a leer en mapudungun</p>
+				</div>
 			</div>
 
 			<a href="#poema"><p><i class="fas fa-angle-double-down fa-3x red animated infinite fadeOutDown"></i></p></a>
@@ -40,39 +51,73 @@
 		<div class="intro">
 			<div class="estructura">
 				<div class="texto">
-					<p><i class="fas fa-sync-alt fa-2x red"></i></p>
-					<p>
-						Iñcin ga iñcin pu mapuce<br>
-						Faciantv faciantv xawukvleiñ<br>
-						Nien mu nien mu kiñe mogen<br>
-						Mvley may mvley may rakizuwam<br>
-						Feymu may feymu may mvley kimtun<br>
-						Faciantv faciantv caliwaiñ<br>
-						Feymu may ta kimuwaiñ<br>
-					</p>
+					<div id="mapudungun" class="animated displaying">
+						<p><i class="fas fa-sync-alt fa-2x red for-display"></i></p>
+						<p>
+							Iñcin ga iñcin pu mapuce<br>
+							Faciantv faciantv xawukvleiñ<br>
+							Nien mu nien mu kiñe mogen<br>
+							Mvley may mvley may rakizuwam<br>
+							Feymu may feymu may mvley kimtun<br>
+							Faciantv faciantv caliwaiñ<br>
+							Feymu may ta kimuwaiñ<br>
+						</p>
 
-					<p>
-						Kom pu Logko mari mari<br>
-						Kom pu Maci mari mari<br>
-						Kom pu Ñidol mari mari<br>
-						Kom pu Genpin mari mari<br>
-						Kom pu Werken mari mari<br>
-						Kom pu Lamgen mari mari<br>
-						Kom pu Peñi mari mari<br>
-						Picikezomo mari mari<br>
-						Picikewenxu mari mari<br>
-					</p>
+						<p>
+							Kom pu Logko mari mari<br>
+							Kom pu Maci mari mari<br>
+							Kom pu Ñidol mari mari<br>
+							Kom pu Genpin mari mari<br>
+							Kom pu Werken mari mari<br>
+							Kom pu Lamgen mari mari<br>
+							Kom pu Peñi mari mari<br>
+							Picikezomo mari mari<br>
+							Picikewenxu mari mari<br>
+						</p>
 
-					<p>
-						mvntvmagelayaiñ tayiñ bafken<br>
-						igkanmupewayiñ pu newen<br>
-						feymu ga feymu ga wewgelayaiñ<br>
-						feymu ga feymu ga wewgelayaiñ<br>
-					</p>
-					
+						<p>
+							mvntvmagelayaiñ tayiñ bafken<br>
+							igkanmupewayiñ pu newen<br>
+							feymu ga feymu ga wewgelayaiñ<br>
+							feymu ga feymu ga wewgelayaiñ<br>
+						</p>
+					</div>
+
+					<div id="espanol" class="animated no-displaying">
+						<p><i class="fas fa-sync-alt fa-2x red for-display"></i></p>
+						<p>
+							Nosotros, nosotros los mapuche<br>
+							Hoy, hoy estamos reunidos<br>
+							Porque tenemos nuestra vida<br>
+							tenemos nuestra visión de mundo<br>
+							Por eso hay sabiduría<br>
+							Hoy, nos saludaremos<br>
+							Así nos vamos a conocer<br>
+						</p>
+
+						<p>
+							Saludos a todos los logko<br>
+							A todas las Machi<br>
+							A todos los Superiores<br>
+							A todos los Dueños de la palabra<br>
+							A todos los Mensajeros<br>
+							A todas las Hermanas<br>
+							A todos los Hermanos<br>
+							A las niñas<br>
+							A los niños<br>
+						</p>
+
+							No nos van a quitar nuestro mar<br>
+							Nuestras fuerzas nos defenderán<br>
+							Por eso no nos ganarán<br>
+							Por eso no nos ganarán<br>
+						</p>
+					</div>
 				</div>
 				<div class="play">
-					<i class="fas fa-music fa-2x"></i>
+					<audio id="audio1" src="assets/audios/ulkatun.mp3"></audio>
+					<a id="play"  href="#" onClick="play()"><i class="fas fa-music fa-3x"></i></a>
+					<a id="stop"  href="#" onClick="play()"><i class="fas fa-music fa-3x red"></i></a>
 				</div>
 				<div class="slider">
 					<img src="http://www.apicius.es/wp-content/uploads/2012/07/IMG-20120714-009211.jpg" alt="">

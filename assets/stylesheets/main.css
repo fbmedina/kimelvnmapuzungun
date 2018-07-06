@@ -130,6 +130,18 @@ h2 {
     width: 60%;
 }
 
+.displaying {
+    display: block;
+    opacity: 1;
+    transition: 2s;
+}
+
+.no-displaying {
+    display: none;
+    opacity: 0;
+    transition: 2s;
+}
+
 .text-red:hover, .red {
     color: rgb(var(--red));
     fill: rgb(var(--red));
