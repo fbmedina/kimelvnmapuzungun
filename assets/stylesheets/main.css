@@ -45,6 +45,11 @@ body, html {
     box-sizing: inherit;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: rgb(var(--black));
@@ -53,7 +58,7 @@ a {
 h1 {
     font-family: 'MAPUCHE';
     color: rgb(var(--red));
-    font-size: 5em;
+    font-size: 6em;
 }
 
 h2, h3, h4 {
@@ -92,9 +97,37 @@ h2 {
     margin-bottom: 1rem;
 }
 
-[data-anchor="home"].active .fadeOutDown {
+[data-anchor="home"].active .fadeOutDown, [data-anchor="poema"].active .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
+}
+
+[data-anchor="poema"] .intro p i.fa-angle-double-down {
+    margin-top: 3rem;
+}
+
+.estructura {
+    display: flex;
+    width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    width: 25%;
+}
+
+.texto p {
+    margin-bottom: 1rem;
+}
+
+.play {
+    width: 15%;
+}
+
+.slider {
+    width: 60%;
 }
 
 .text-red:hover, .red {
