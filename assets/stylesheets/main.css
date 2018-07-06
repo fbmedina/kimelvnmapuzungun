@@ -1,7 +1,7 @@
 :root {
     --black: 68, 68, 68; 
     --red: 170, 34, 51;
-    --green:136, 136, 51;
+    --green:69, 158, 90;
     --blue: 45, 63, 199;
     --yellow: 255, 238, 136;
     --brown: 119, 68, 34;
@@ -63,6 +63,7 @@ body {
 
     p {
         line-height: 1.25;
+        margin-bottom: 2.25rem;
     }
 
     h1 {
@@ -74,6 +75,7 @@ body {
     h2, h3, h4 {
         font-family: 'Dosis';
         text-transform: uppercase;
+        font-weight: 800;
     }
 
     h2 {
@@ -83,12 +85,10 @@ body {
 
     h3 {
         font-size: 2.25em;
-        font-weight: 800;
     }
 
     h4 {
         font-size: 1.75em;
-        font-weight: 500;
     }
 
     b {
@@ -119,10 +119,6 @@ body {
 
     [data-anchor="home"] .intro h2, [data-anchor="home"] .intro h1, [data-anchor="home"] .intro .saludo, [data-anchor="home"] .intro > p {
         margin-bottom: 2.25rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
     }
 
     [data-anchor="home"].active .fadeOutDown, [data-anchor="poema"].active .fadeOutDown {
@@ -201,6 +197,10 @@ body {
         margin-bottom: 5rem;
     }
 
+    .titulo h4 {
+        font-weight: 500;
+    }
+
     .redes-sociales {
         width: 20%;
     }
@@ -255,6 +255,53 @@ body {
 
     .big {
         font-size: 1.25em;
+    }
+
+    .active-link {
+        background-color: red;
+    }
+
+    i.fas.fa-chevron-right {
+        display: inline-block;
+        padding: 1rem 0 1rem 5rem;
+        margin: 0;
+    }
+
+    i.fas.fa-chevron-left {
+        display: inline-block;
+        padding: 1rem 5rem 1rem 0;
+        margin: 0;
+    }
+
+    p.destacado {
+        display: block;
+        width: 65%;
+        background: rgba(var(--black), .15);
+        padding: 1rem 2rem;
+        margin: 0 auto;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .owl-carousel .owl-stage {
+      display: flex;
+      align-items: center;
+    }
+
+    .owl-carousel {
+        padding: 2rem 0;
+        border: 1px dashed rgb(170, 34, 51);
+    }
+
+    #mapudungun a {
+        color: rgba(var(--black), .8);
+    }
+
+     #mapudungun a:hover {
+        color: rgb(var(--red));
     }
 
 }

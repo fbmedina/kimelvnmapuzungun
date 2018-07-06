@@ -46,6 +46,8 @@ $(document).ready(function()
         $("#saludo-mapudungun").removeClass("no-displaying").addClass("displaying fadeIn");
         $("i.for-display").toggleClass('fa-rotate-90 normal');    
     });
+
+    
 });
 
 function getRandomClass()
