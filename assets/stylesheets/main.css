@@ -73,16 +73,22 @@ body {
 
     h2, h3, h4 {
         font-family: 'Dosis';
-        font-weight: 800;
         text-transform: uppercase;
     }
 
     h2 {
         font-size: 3em;
+        font-weight: 800;
     }
 
     h3 {
         font-size: 2.25em;
+        font-weight: 800;
+    }
+
+    h4 {
+        font-size: 1.75em;
+        font-weight: 500;
     }
 
     b {
@@ -140,6 +146,14 @@ body {
         align-items: center;
     }
 
+    .pagjoel {
+        display: flex;
+        width: 75vw;
+        margin: auto;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
     .texto {
         width: 25%;
     }
@@ -170,6 +184,33 @@ body {
         display: none;
         opacity: 0;
         transition: 2s;
+    }
+
+    .foto, .contenido {
+        width: 50%;
+    }
+
+    .contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .titulo {
+        width: 100%;
+        background: rgb(var(--red));
+        color: white;
+        padding: 1rem 0;
+        margin-bottom: 5rem;
+    }
+
+    .redes-sociales {
+        width: 20%;
+    }
+
+    .descripcion {
+        width: 80%;
     }
 
     .text-red:hover, .red {
@@ -208,11 +249,16 @@ body {
         margin-top: 3rem;
         display: inline-block;
         font-weight: 800;
+        text-transform: uppercase;
     }
 
     .btn:hover {
         background: rgb(var(--brown));
         color: white;
+    }
+
+    .big {
+        font-size: 1.25em;
     }
 
 }
