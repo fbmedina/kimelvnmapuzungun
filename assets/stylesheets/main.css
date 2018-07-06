@@ -118,7 +118,7 @@ body {
     }
 
     [data-anchor="home"] .intro h2, [data-anchor="home"] .intro h1, [data-anchor="home"] .intro .saludo, [data-anchor="home"] .intro > p {
-        margin-bottom: 3rem;
+        margin-bottom: 2.25rem;
     }
 
     p {
@@ -131,16 +131,16 @@ body {
     }
 
     [data-anchor="poema"] .intro p i.fa-angle-double-down {
-        margin-top: 3rem;
+        margin-top: 2.25rem;
     }
 
     [data-anchor="grafa"] .intro h3 {
-        margin-bottom: 3rem;
+        margin-bottom: 2.25rem;
     }
 
     .estructura, .grafemario {
         display: flex;
-        width: 75vw;
+        width: 85vw;
         margin: auto;
         justify-content: space-between;
         align-items: center;
@@ -148,14 +148,14 @@ body {
 
     .pagjoel {
         display: flex;
-        width: 75vw;
+        width: 85vw;
         margin: auto;
         justify-content: space-between;
         align-items: flex-start;
     }
 
     .texto {
-        width: 25%;
+        width: 30%;
     }
 
     .play {
@@ -163,7 +163,7 @@ body {
     }
 
     .slider {
-        width: 60%;
+        width: 55%;
     }
 
     .tabla {
@@ -246,7 +246,7 @@ body {
         background: rgb(var(--red));
         padding: 1em 3em;
         color: white;
-        margin-top: 3rem;
+        margin-top: 2.25rem;
         display: inline-block;
         font-weight: 800;
         text-transform: uppercase;
