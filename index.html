@@ -213,7 +213,6 @@
 			    </div>
 			</div>
 		</div>
-		<a href="#grafa"><p><i class="fas fa-angle-double-down fa-3x red animated threetimes fadeOutDown"></i></p></a>
 	</div>
 	<div class="section">
 		<div class="intro">
@@ -249,8 +248,7 @@
 <script>
     $(document).ready(function() {
 		$('#fullpage').fullpage({
-			anchors: ['home', 'poema', 'grafa'],
-			scrolloverflow: true
+			anchors: ['home', 'poema', 'grafa']
 		});
 
 		$('.owl-carousel').owlCarousel({
@@ -258,11 +256,11 @@
 			navClass: ["owl-prev", "owl-next"],
             items: 1,
             loop: true,
+            autoplay:false,
             center: true,
             margin: 0,
             callbacks: true,
             URLhashListener: true,
-            autoplayHoverPause: true,
             dots: false,
             smartSpeed: 1000,
     		navText: ["<i class='fas fa-chevron-left red'></i>","<i class='fas fa-chevron-right red'></i>"]
