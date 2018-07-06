@@ -31,138 +31,146 @@
     font-style: normal;
 }
 
-
-body, html {
-	box-sizing: border-box;
-	text-align: center;
-    font-family: 'Dosis';
-    font-weight: 500;
-    font-size: 18px;
-    color: rgb(var(--black));
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(var(--black));
-}
-
-p {
-    line-height: 1.25;
-}
-
-h1 {
-    font-family: 'MAPUCHE';
-    color: rgb(var(--red));
-    font-size: 6em;
-}
-
-h2, h3, h4 {
-    font-family: 'Dosis';
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-.marco-left, .marco-right {
-    position: fixed;
-    height: 100vh;
-    width: auto;
-    fill: rgb(var(--black));
-    opacity: .75;
-}
-
-.marco-left {
-    top: 0;
-    left: 0;
-}
-
-.marco-right {
-    top: 0;
-    right: 0;
-}
-
-[data-anchor="home"] .intro h2, [data-anchor="home"] .intro h1, [data-anchor="home"] .intro .saludo, [data-anchor="home"] .intro > p {
-    margin-bottom: 3rem;
-}
-
-[data-anchor="home"] .intro .saludo p, .texto p {
-    margin-bottom: 1rem;
-}
-
-[data-anchor="home"].active .fadeOutDown, [data-anchor="poema"].active .fadeOutDown {
-  -webkit-animation-name: fadeOutDown;
-  animation-name: fadeOutDown;
-}
-
-[data-anchor="poema"] .intro p i.fa-angle-double-down {
-    margin-top: 3rem;
-}
-
-.estructura {
-    display: flex;
-    width: 75vw;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.texto {
-    width: 25%;
-}
-
-.play {
-    width: 15%;
-}
-
-.slider {
-    width: 60%;
-}
-
-.displaying {
-    display: block;
-    opacity: 1;
-    transition: 2s;
-}
-
-.no-displaying {
+body {
     display: none;
-    opacity: 0;
-    transition: 2s;
 }
 
-.text-red:hover, .red {
-    color: rgb(var(--red));
-    fill: rgb(var(--red));
-}
+@media (min-width: 992px) {
 
-.text-green:hover, .green {
-    color: rgb(var(--green));
-    fill: rgb(var(--green));
-}
+    body, html {
+        display: initial;
+    	box-sizing: border-box;
+    	text-align: center;
+        font-family: 'Dosis';
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(var(--black));
+    }
 
-.text-blue:hover, .blue {
-    color: rgb(var(--blue));
-    fill: rgb(var(--blue));
-}
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
 
-.text-yellow:hover, .yellow {
-    color: rgb(var(--yellow));
-    fill: rgb(var(--yellow));
-}
+    img {
+        width: 100%;
+        height: auto;
+    }
 
-.text-brown:hover, .brown {
-    color: rgb(var(--brown));
-    fill: rgb(var(--brown));
+    a {
+        text-decoration: none;
+        color: rgb(var(--black));
+    }
+
+    p {
+        line-height: 1.25;
+    }
+
+    h1 {
+        font-family: 'MAPUCHE';
+        color: rgb(var(--red));
+        font-size: 6em;
+    }
+
+    h2, h3, h4 {
+        font-family: 'Dosis';
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .marco-left, .marco-right {
+        position: fixed;
+        height: 100vh;
+        width: auto;
+        fill: rgb(var(--black));
+        opacity: .5;
+    }
+
+    .marco-left {
+        top: 0;
+        left: 0;
+    }
+
+    .marco-right {
+        top: 0;
+        right: 0;
+    }
+
+    [data-anchor="home"] .intro h2, [data-anchor="home"] .intro h1, [data-anchor="home"] .intro .saludo, [data-anchor="home"] .intro > p {
+        margin-bottom: 3rem;
+    }
+
+    [data-anchor="home"] .intro .saludo p, .texto p {
+        margin-bottom: 1rem;
+    }
+
+    [data-anchor="home"].active .fadeOutDown, [data-anchor="poema"].active .fadeOutDown {
+      -webkit-animation-name: fadeOutDown;
+      animation-name: fadeOutDown;
+    }
+
+    [data-anchor="poema"] .intro p i.fa-angle-double-down {
+        margin-top: 3rem;
+    }
+
+    .estructura {
+        display: flex;
+        width: 75vw;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .texto {
+        width: 25%;
+    }
+
+    .play {
+        width: 15%;
+    }
+
+    .slider {
+        width: 60%;
+    }
+
+    .displaying {
+        display: block;
+        opacity: 1;
+        transition: 2s;
+    }
+
+    .no-displaying {
+        display: none;
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .text-red:hover, .red {
+        color: rgb(var(--red));
+        fill: rgb(var(--red));
+    }
+
+    .text-green:hover, .green {
+        color: rgb(var(--green));
+        fill: rgb(var(--green));
+    }
+
+    .text-blue:hover, .blue {
+        color: rgb(var(--blue));
+        fill: rgb(var(--blue));
+    }
+
+    .text-yellow:hover, .yellow {
+        color: rgb(var(--yellow));
+        fill: rgb(var(--yellow));
+    }
+
+    .text-brown:hover, .brown {
+        color: rgb(var(--brown));
+        fill: rgb(var(--brown));
+    }
+
 }
