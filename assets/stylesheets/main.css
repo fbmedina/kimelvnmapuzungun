@@ -130,10 +130,6 @@ body {
       animation-name: fadeOutDown;
     }
 
-    [data-anchor="poema"] .intro p i.fa-angle-double-down {
-        margin-top: 2.25rem;
-    }
-
     [data-anchor="grafa"] .intro h3 {
         margin-bottom: 2.25rem;
     }
@@ -155,7 +151,7 @@ body {
     }
 
     .texto {
-        width: 30%;
+        width: 35%;
     }
 
     .play {
@@ -163,7 +159,7 @@ body {
     }
 
     .slider {
-        width: 55%;
+        width: 50%;
     }
 
     .tabla {
