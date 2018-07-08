@@ -117,7 +117,7 @@ body {
         right: 0;
     }
 
-    [data-anchor="home"] .intro h2, [data-anchor="home"] .intro h1, [data-anchor="home"] .intro .saludo, [data-anchor="home"] .intro > p {
+    [data-anchor="home"] .intro h2, [data-anchor="home"] .intro h1 {
         margin-bottom: 2.25rem;
     }
 
